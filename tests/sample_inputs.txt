@@ -1,0 +1,29 @@
+Tower of Hanoi - Sample Inputs
+==============================
+
+Test Case 1:
+Number of Disks: 1
+Source Peg: A
+Target Peg: C
+Expected Minimum Moves: 1
+
+
+Test Case 2:
+Number of Disks: 2
+Source Peg: A
+Target Peg: C
+Expected Minimum Moves: 3
+
+
+Test Case 3:
+Number of Disks: 3
+Source Peg: A
+Target Peg: C
+Expected Minimum Moves: 7
+
+
+Test Case 4:
+Number of Disks: 4
+Source Peg: A
+Target Peg: C
+Expected Minimum Moves: 15
