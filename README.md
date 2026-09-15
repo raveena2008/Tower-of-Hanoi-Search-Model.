@@ -1,74 +1,43 @@
-# Tower of Hanoi Search Model
+# Tower of Hanoi – Search Model / State Space
 
-## Foundations of Artificial Intelligence
+## 1. Problem Statement
 
-### Project Overview
+The Tower of Hanoi is a classic problem involving three rods and a number of disks.
 
-The Tower of Hanoi Search Model is an AI-based project that represents the Tower of Hanoi puzzle as a state-space search problem.
+The objective is to move all disks from the source rod to the destination rod using an auxiliary rod.
 
-The project uses Breadth-First Search (BFS) to explore possible disk configurations and find a path from the initial state to the goal state.
-
-### Problem Statement
-
-The Tower of Hanoi is a puzzle consisting of three pegs and a number of disks of different sizes.
-
-The objective is to move all disks from the source peg to the destination peg while following these rules:
+### Rules
 
 1. Only one disk can be moved at a time.
-2. Only the top disk of a peg can be moved.
+2. Only the top disk of a rod can be moved.
 3. A larger disk cannot be placed on a smaller disk.
+4. All disks must be moved from the source rod to the destination rod.
 
-### Objectives
+This project models the Tower of Hanoi problem as a **State Space Search Problem**.
 
-- Represent the puzzle using states.
-- Generate valid disk movements.
-- Apply state-space search techniques.
-- Find a solution using Breadth-First Search.
-- Display the solution steps.
+---
 
-### Algorithm Used
+## 2. Project Objective
 
-Breadth-First Search (BFS)
+The main objectives of this project are:
 
-BFS explores the search space level by level.
+- To represent the Tower of Hanoi problem using states.
+- To generate valid movements between states.
+- To apply search techniques to find a solution.
+- To understand state space representation.
+- To display the sequence of moves required to solve the problem.
 
-Each valid Tower of Hanoi configuration is treated as a state.
+---
 
-The algorithm continues searching until the goal state is reached.
+## 3. Approach
 
-### Technologies Used
+The Tower of Hanoi problem is represented using a state space model.
 
-- Python
-- Breadth-First Search
-- State-Space Search
-- GitHub
+### State Representation
 
-### Input
+Each state represents the arrangement of disks on the three rods.
 
-The user enters the number of disks.
-
-Example:
-
-3
-
-### Output
-
-The program displays the sequence of movements required to solve the puzzle.
-
-Example:
-
-Move 1: Tower 1 to Tower 3
-
-Move 2: Tower 1 to Tower 2
-
-Move 3: Tower 3 to Tower 2
-
-### Project Structure
+For example:
 
 ```text
-Tower-of-Hanoi-Search-Model/
-│
-├── main.py
-├── README.md
-└── .gitignore
-```
+State = ((3, 2, 1), (), ())
